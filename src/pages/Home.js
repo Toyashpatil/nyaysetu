@@ -62,39 +62,37 @@ const Home = () => {
 
   return (
     <div className='main h-[100vh] bg-[#FFFAFA]'>
-      <div className='lady h-[50vh] overflow-hidden z-[2] '>
+      <div className='lady h-[45vh] overflow-hidden z-[2] '>
         <img src={bg} className='img h-[100%] w-[100%] '></img>
       </div>
       <div className='login bg-[#FFFAFA] h-[50vh] flex items-center flex-col'>
         <p className='text-[1.5rem] not-italic font-semibold leading-[normal]'>Welcome</p>
-        <form className='inputs  h-auto w-auto mt-4 inline-flex flex-col  items-start gap-6'>
-          <div className='input1 flex flex-col items-start gap-1.5'>
-            <p className='text-[1rem] not-italic font-medium leading-[normal]'>Username</p>
-            <input placeholder='username' name='name' onChange={handleChange} className='username lex w-[20.625rem] items-center border shadow-[0px_4px_4px_0px_rgba(0,0,0,0.10)] px-[0.3125rem] py-2 rounded-[0.3.25rem] border-solid border-[#41C0AB] bg-[#efefef]'></input>
+        <form className='inputs  h-auto w-[80%] mt-4 inline-flex flex-col  items-start gap-6'>
+          <div className='input1 w-full flex flex-col items-start gap-1.5'>
+            <p className='text-[1rem] not-italic font-medium leading-[normal]'>Username:</p>
+            <input placeholder='username' name='username' className='username lex w-[100%] items-center border shadow-[0px_4px_4px_0px_rgba(0,0,0,0.10)] px-[0.3125rem] py-2 rounded-[0.3.25rem] border-solid border-[#41C0AB] bg-[#efefef]'></input>
           </div>
-          <div className=' input2 flex flex-col justify-center items-start gap-[0.7rem]'>
-            <p className='text-[1rem] not-italic font-medium leading-[normal]'>Designation</p>
-            <div className='flex items-center gap-20'>
+          <div className=' input2 w-full flex flex-col justify-center items-start gap-[0.3rem]'>
+            <p className='text-[1rem] not-italic font-medium leading-[normal]'>Designation:</p>
+            <div className='flex items-center gap-12'>
               <div className='forLawyer flex items-center gap-[0.56rem]'>
                 <p className='text-[1rem] not-italic font-medium leading-[normal]'>Lawyer</p>
-                <input className="lawyer border rounded-sm border-solid border-[#41C0AB]" type='checkbox' name="lawyer" onChange={handleChange} ></input>
+                <input className="lawyer border rounded-sm border-solid border-[#41C0AB]" type='checkbox' ></input>
               </div>
               <div className=' forUtp flex items-center gap-[0.9rem]'>
                 <p className='text-[1rem] not-italic font-medium leading-[normal]'>Undertrial Prisoner</p>
-                <input type='checkbox' className='utp border rounded-sm border-solid border-[#41C0AB]' name="prisoner" onChange={handleChange} ></input>
-              </div>
-
+                <input type='checkbox'className='utp border rounded-sm border-solid border-[#41C0AB]' ></input>
+              </div> 
             </div>
-
           </div>
-          <div className='input3  flex flex-col items-start gap-1.5'>
-            <p className='text-[1rem] not-italic font-medium leading-[normal]'>Enter CNR/Enrollment Number</p>
-            <input className="number flex w-[20.625rem] items-center px-[0.3125rem] py-2 border shadow-[0px_4px_4px_0px_rgba(0,0,0,0.10)] rounded-[0.325rem] border-solid border-[#41C0AB]" name='veriNum'onChange={handleChange} placeholder='CNR/Enrollment Number'></input>
+          <div className='input3 w-full flex flex-col items-start gap-1.5'>
+          <p className='text-[1rem] not-italic font-medium leading-[normal]'>Enter CNR/Enrollment Number:</p>
+          <input className="number flex w-[100%] items-center px-[0.3125rem] py-2 border shadow-[0px_4px_4px_0px_rgba(0,0,0,0.10)] rounded-[0.325rem] border-solid border-[#41C0AB] bg-[#efefef]" placeholder='CNR/Enrollment Number' ></input>
           </div>
-          <button type="submit" className='flex w-[20.625rem] justify-center items-center px-[0.3125rem] py-2  border shadow-[0px_4px_4px_0px_rgba(0,0,0,0.10)] rounded-[0.3125rem] border-solid border-[#41C0AB] bg-[#41C0AB]' onClick={handleClick}>Continue</button>
+          <button type="submit" className='flex w-[100%] justify-center items-center px-[0.3125rem] py-2  border shadow-[0px_4px_4px_0px_rgba(0,0,0,0.10)] rounded-[0.3125rem] border-solid border-[#41C0AB] bg-[#41C0AB] '>Continue</button>
 
         </form>
-
+        
       </div>
     </div>
   )
