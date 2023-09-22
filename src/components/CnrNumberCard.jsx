@@ -6,7 +6,7 @@ const CnrNumberCard = () => {
   return (
     <div className="relative my-10 mx-6">
     <div className="border border-lightseagreen inset rounded-2xl shadow-[0px_4px_4px_rgba(0,_0,_0,_0.15)] overflow-hidden">
-        <img className="w-full h-32 object-cover opacity-[0.30] " src={RectangleImg}></img>
+        <img className="w-full h-32 object-cover opacity-[0.10] " src={RectangleImg}></img>
     </div>
     <div className="absolute top-0 left-0 p-4">
         <div className="flex flex-col gap-2">
