@@ -1,11 +1,24 @@
-import React from "react";
+import React,{useEffect} from "react";
 import Header from "../components/Header";
 import Footer from "../components/Footer";
 import CnrNumberCard from "../components/CnrNumberCard";
 import VideoLinks from "../components/VideoLinks";
 import Button from "../components/Button";
+import { useNavigate } from "react-router-dom";
+
 
 const LegalAdvice = () => {
+
+  const navigate=useNavigate()
+  
+  
+  useEffect(() => {
+    if(!localStorage.getItem("token")){
+      navigate('/login')
+    }
+  }, [])
+  
+
   const imgURLs = [
     "https://i.redd.it/cbd801fa2l781.jpg",
     "https://i.redd.it/i-keep-seeing-this-angry-cat-meme-does-anyone-know-what-v0-0o96ygkg9jw91.jpg?width=1080&format=pjpg&auto=webp&s=8a7220f58ae5e5ecbef518367d48b96f7327e06d",
