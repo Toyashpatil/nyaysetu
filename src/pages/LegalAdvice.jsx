@@ -1,11 +1,24 @@
-import React from "react";
+import React,{useEffect} from "react";
 import Header from "../components/Header";
 import Footer from "../components/Footer";
 import CnrNumberCard from "../components/CnrNumberCard";
 import VideoLinks from "../components/VideoLinks";
 import Button from "../components/Button";
+import { useNavigate } from "react-router-dom";
+
 
 const LegalAdvice = () => {
+
+  const navigate=useNavigate()
+  
+  
+  useEffect(() => {
+    if(!localStorage.getItem("token")){
+      navigate('/login')
+    }
+  }, [])
+  
+
   return (
     <div>
       <Header name="Atharva Upare" />
