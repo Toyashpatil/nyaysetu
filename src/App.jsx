@@ -6,6 +6,7 @@ import Home from './pages/Home';
 import UndertrialPrisoner from './pages/UndertrialPrisoner';
 import LegalAdvice from './pages/LegalAdvice';
 import Admin from './pages/Admin';
+import MonitorCases from './pages/MonitorCases'
 
 const App = () => {
   return (
