@@ -1,11 +1,14 @@
-import React,{useContext} from 'react'
-import AuthContext from '../context/authContext';
+import React, { useContext } from "react";
+import AuthContext from "../context/authContext";
 
-const Button = () => {
-
+const Button = ({className, children}) => {
   return (
-    <div>Button</div>
-  )
-}
+    <>
+      <button className={`text-base text-white font-medium bg-lightseagreen rounded-md ${className}`}>
+        {children}
+      </button>
+    </>
+  );
+};
 
 export default Button;
