@@ -75,12 +75,12 @@ const UnderTrialPrisonerInCourt = () => {
       {/* Only add in children */}
 
       <Admin className={"mx-24  p-8 "}>
+        <div className="text-center text-3xl font-semibold text-lightseagreen pb-6">Undertrial Prisoners in your Court(s):</div>
         <div className="flex flex-row gap-14 flex-wrap items-center justify-center">
           {prisoners.map((prisoner, index) => (
             <PrisonerCard key={index} {...prisoner} />
           ))}
         </div>
-        <div></div>
       </Admin>
     </div>
   );
