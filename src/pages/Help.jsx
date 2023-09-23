@@ -4,8 +4,9 @@ import CnrNumberCard from "../components/CnrNumberCard";
 import Footer from "../components/Footer";
 import Button from "../components/Button"
 import Support from '../components/Support';
-import Video from "../components/Video";
+import { useNavigate } from 'react-router-dom';
 function Help() {
+  const navigate = useNavigate()
   return (
     <div>
         <Header name="Atharva Upare"/>
@@ -31,7 +32,9 @@ function Help() {
         
 
         <div className="flex justify-center ">
-        <Button className="fixed  bottom-10 w-[80%] h-9 bg-lightseagreen">
+        <Button onClick={() => {
+            navigate("/connect");
+          }} className="fixed  bottom-10 w-[80%] h-9 bg-lightseagreen">
           Connect to Lawyer
         </Button>
       </div>

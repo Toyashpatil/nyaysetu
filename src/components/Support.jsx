@@ -11,14 +11,14 @@ const Support = ({ title, data, link }) => {
             <div>
                 {title}
             </div>
-            <div className='text-base text-lightseagreen'>
+            <div className='text-base text-lightseagreen underline'>
                 {data}
             </div>
             <Video  title="UTP's Human Rights" link="https://www.youtube.com/embed/nDgIVseTkuE?si=8v_EBEIMQZ-D8kBb"/>
             
             <div className=''>
             <h1 >Additional Resources</h1>
-                <a href={link}>{link}</a>
+                <a className='underline' href={link}>{link}</a>
             </div>
         </div>
     )
