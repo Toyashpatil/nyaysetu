@@ -48,14 +48,14 @@ const Home = () => {
     console.log(Data)
     if(Data.success){
       localStorage.setItem("token",Data.token)
-      if(!auth.lawyer){
+      if(Data.user==="prisoner"){
         navigate('/')
       }else{
         navigate("/admin")
       }
       
     }else{
-      alert("Invalid Credentials")
+      alert("No such Reacord Found")
     }
   }
   

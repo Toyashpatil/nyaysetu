@@ -18,25 +18,30 @@ router.post('/createUser', [
     try {
         let user = await User.findOne({ 'veriNum': req.body.veriNum })
         if (!user) {
-            // return res.status(400).json({success, Error: 'User with this email already exist' })
+            return res.status(400).json({success, Error: 'User with this email already exist' })
             // Creating User
-            user = await User.create({
-                name: req.body.name,
-                veriNum:req.body.veriNum,
-                lawyer: req.body.lawyer,
-                prisoner:req.body.prisoner
-            })
-            const data={
-                id:user.id
-            } 
-            const token=jwt.sign(data,JWT_token);
-            res.json({userStatus:"userCreate",success:true,token})
+            // user = await User.create({
+            //     name: req.body.name,
+            //     veriNum:req.body.veriNum,
+            //     lawyer: req.body.lawyer,
+            //     prisoner:req.body.prisoner
+            // })
+            // const data={
+            //     id:user.id
+            // } 
+            // const token=jwt.sign(data,JWT_token);
+            // res.json({userStatus:"userCreate",success:true,token})
         }
         const data={
             id:user.id
         } 
         const token=jwt.sign(data,JWT_token);
-        res.json({userStatus:"loginUser",success:true,token}) 
+        if(req.body.lawyer){
+            res.json({user:"lawyer",userStatus:"loginUser",success:true,token})
+        }else{
+            res.json({user:"prisoner",userStatus:"loginUser",success:true,token})
+        }
+        
        
 
     } catch (error) {
