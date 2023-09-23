@@ -5,10 +5,11 @@ import Button from './components/Button';
 import Home from './pages/Home';
 import UndertrialPrisoner from './pages/UndertrialPrisoner';
 import LegalAdvice from './pages/LegalAdvice';
-import Admin from './pages/Admin';
 import MonitorCases from './pages/MonitorCases'
 import ConnectToLegalServices from './pages/ConnectToLegalServices';
 import Help from "./pages/Help";
+import Admin from './components/AdminLayout';
+import AdminHome from './pages/admin/AdminHome';
 const App = () => {
   return (
     <div>
@@ -20,7 +21,7 @@ const App = () => {
             <Route path='/legaladvice' element={<LegalAdvice/>} ></Route>
             <Route path='/monitorcase' element={<MonitorCases/>} ></Route>
             <Route path='/connect' element={<ConnectToLegalServices/>} ></Route>
-            <Route path='/admin' element={<Admin/>}></Route>
+            <Route path='/admin' element={<AdminHome/>}></Route>
             <Route path='/help' element={<Help/>}></Route>
           </Routes>
         </>
