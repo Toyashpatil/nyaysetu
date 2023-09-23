@@ -10,8 +10,8 @@ const UserCard = ({ imageUrl, name, employeeNumber }) => {
 
   return (
     <div
-      className="h-max border border-lightseagreen inset rounded-xl shadow-[0px_4px_4px_rgba(0,_0,_0,_0.15)] overflow-hidden px-2"
-      onClick={onClickHandler}
+      className="h-max mx-2 border border-lightseagreen inset rounded-xl shadow-[0px_4px_4px_rgba(0,_0,_0,_0.15)] overflow-hidden px-2"
+      onClick={onClickHandler} 
     >
       <div className="flex flex-row items-center w-full">
         <img src={imageUrl} className="p-2 h-20 w-20 rounded-full" alt={name} />
@@ -23,8 +23,8 @@ const UserCard = ({ imageUrl, name, employeeNumber }) => {
         </div>
       </div>
       <div className="flex flex-row gap-4 py-2 justify-center items-center w-full">
-        <Button className="px-2">Book a slot</Button>
-        <Button  className="px-2">Request a video call</Button>
+        <Button className="px-3 text-base">Book a slot</Button>
+        <Button  className="px-3">Request a video call</Button>
       </div>
     </div>
   );
