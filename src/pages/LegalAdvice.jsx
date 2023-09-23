@@ -2,7 +2,7 @@ import React, { useEffect } from "react";
 import Header from "../components/Header";
 import Footer from "../components/Footer";
 import CnrNumberCard from "../components/CnrNumberCard";
-import VideoLinks from "../components/VideoLinks";
+import Video from "../components/Video";
 import Button from "../components/Button";
 import { useNavigate } from "react-router-dom";
 
@@ -15,11 +15,11 @@ const LegalAdvice = () => {
     }
   }, []);
 
-  const imgURLs = [
-    "https://wallpapercave.com/wp/wp4332844.jpg",
-    "https://wallpapercave.com/dwp1x/wp4332850.jpg",
-    "https://wallpapercave.com/dwp1x/wp2750384.jpg",
-  ];
+  // const imgURLs = [
+  //   "https://wallpapercave.com/wp/wp4332844.jpg",
+  //   "https://wallpapercave.com/dwp1x/wp4332850.jpg",
+  //   "https://wallpapercave.com/dwp1x/wp2750384.jpg",
+  // ];
 
   return (
     <div>
@@ -58,10 +58,10 @@ const LegalAdvice = () => {
       <div className="video links mx-10">
         <div>
           <div className="flex flex-col gap-y-4 mb-24">
-            <VideoLinks title="UTP's Human Rights" imgLink="https://youtu.be/nDgIVseTkuE?feature=shared" />
-            <VideoLinks title="UTP's Human Rights" imgLink="https://youtu.be/nDgIVseTkuE?feature=shared" />
-            <VideoLinks title="UTP's Human Rights" imgLink="https://youtu.be/nDgIVseTkuE?feature=shared"/>
-            <VideoLinks title="UTP's Human Rights" imgLink="https://youtu.be/nDgIVseTkuE?feature=shared" />
+            <Video title="UTP's Human Rights" link="https://www.youtube.com/embed/nDgIVseTkuE?si=8v_EBEIMQZ-D8kBb" />
+            <Video title="UTP's Human Rights" link="https://www.youtube.com/embed/nDgIVseTkuE?si=8v_EBEIMQZ-D8kBb" />
+            <Video title="UTP's Human Rights" link="https://www.youtube.com/embed/nDgIVseTkuE?si=8v_EBEIMQZ-D8kBb"/>
+            <Video title="UTP's Human Rights" link="https://www.youtube.com/embed/nDgIVseTkuE?si=8v_EBEIMQZ-D8kBb" />
             {/* {imgURLs.map((imageUrl, index) => (
               <VideoLinks imgLink={imageUrl} index={index} />
             ))} */}
