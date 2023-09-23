@@ -3,7 +3,7 @@ import { useNavigate } from "react-router-dom";
 import Footer from "./Footer";
 import Sidebar from "./Sidebar";
 
-const Admin = () => {
+const Admin = ({children}) => {
   const navigate = useNavigate();
 
   useEffect(() => {
@@ -116,7 +116,7 @@ const Admin = () => {
           <Sidebar items={divs} />
         </div>
       </div>
-      <div style={{ flex: 93 }}>Admin</div>
+      <div style={{ flex: 93 }}>{children}</div>
       <Footer />
     </div>
   );
