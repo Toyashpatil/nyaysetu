@@ -27,6 +27,9 @@ function Help() {
           Connect to Lawyer
         </Button>
       </div>
+      <div>
+      <Support title="Toyash" data="Toyasah is great" link="https://eventio.csikjsce.org"/>
+      </div>
         <Footer/>
     </div>
   )
