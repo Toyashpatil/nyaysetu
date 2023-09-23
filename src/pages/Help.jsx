@@ -3,6 +3,7 @@ import Header from "../components/Header";
 import CnrNumberCard from "../components/CnrNumberCard";
 import Footer from "../components/Footer";
 import Button from "../components/Button"
+import Support from '../components/Support';
 
 function Help() {
   return (
