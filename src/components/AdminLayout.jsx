@@ -2,8 +2,9 @@ import React, { useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
 import Footer from "./Footer";
 import Sidebar from "./Sidebar";
+import Logo from "../pages/assets/logo.png";
 
-const Admin = ({children}) => {
+const Admin = ({ children }) => {
   const navigate = useNavigate();
 
   useEffect(() => {
@@ -116,7 +117,33 @@ const Admin = ({children}) => {
           <Sidebar items={divs} />
         </div>
       </div>
-      <div style={{ flex: 93 }}>{children}</div>
+      <div style={{ flex: 93 }}>
+        <div className="flex flex-row items-center justify-between mx-16">
+          <div className="flex flex-row px-8 py-4 gap-8 items-center">
+            <div className="rounded-full overflow-hidden h-28 w-28">
+              <img src={imageUrl} />
+            </div>
+            <div className="text-4xl font font-semibold">
+              <div className="inline-block w-96">Namaste</div>
+              <div className="text-lightseagreen">Atharva Upare</div>
+            </div>
+          </div>
+          <div className="h-max w-48">
+            <div className="h-max max-w-48">
+              <img
+                src={Logo}
+                alt="logo"
+                className="drop-shadow-xl"
+              />
+            </div>
+          </div>
+       
+        </div>
+        <div className="h-1 w-[90%] mx-auto rounded-full bg-lightseagreen">
+
+        </div>
+        {children}
+      </div>
       <Footer />
     </div>
   );
