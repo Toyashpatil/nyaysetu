@@ -3,8 +3,16 @@ import PropTypes from "prop-types";
 import Button from "./Button"; // Assuming you have a Button component
 
 const UserCard = ({ imageUrl, name, employeeNumber }) => {
+
+  const onClickHandler = () => {
+    console.log("UserCard clicked");
+  };
+
   return (
-    <div className="h-max border border-lightseagreen inset rounded-xl shadow-[0px_4px_4px_rgba(0,_0,_0,_0.15)] overflow-hidden px-2">
+    <div
+      className="h-max border border-lightseagreen inset rounded-xl shadow-[0px_4px_4px_rgba(0,_0,_0,_0.15)] overflow-hidden px-2"
+      onClick={onClickHandler}
+    >
       <div className="flex flex-row items-center w-full">
         <img src={imageUrl} className="p-2 h-20 w-20 rounded-full" alt={name} />
         <div className="flex flex-col gap-2">
@@ -16,7 +24,7 @@ const UserCard = ({ imageUrl, name, employeeNumber }) => {
       </div>
       <div className="flex flex-row gap-4 py-2 justify-center items-center w-full">
         <Button className="px-2">Book a slot</Button>
-        <Button className="px-2">Request a video call</Button>
+        <Button  className="px-2">Request a video call</Button>
       </div>
     </div>
   );
