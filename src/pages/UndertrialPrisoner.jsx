@@ -31,7 +31,7 @@ const UndertrialPrisoner = () => {
         <div className=" w-[374px] h-[172px]">
           <div className=" flex gap-2 w-[374px] h-[172px]">
             <NavLink to="/connect"><Options img={option1} text="Connect to Legal Services" /></NavLink>
-            <Options img={option2} text="Help and Support" />
+            <NavLink to="/help"><Options img={option2} text="Help and Support" /></NavLink>
           </div>
         </div>
         <hr className="mr-2" />
