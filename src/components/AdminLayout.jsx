@@ -104,8 +104,8 @@ const Admin = ({ children, className }) => {
   return (
     <div style={{ display: "flex" }} className="max-h-full   ">
       <div
-        style={{ flex: 7 }}
-        className="bg-lightseagreen min-w-[100px] justify-between flex flex-col "
+  
+        className="bg-lightseagreen min-w-[100px] justify-between flex flex-col h-[1200px]"
       >
         <div className="flex flex-col items-center">
           <div className="pt-24">
