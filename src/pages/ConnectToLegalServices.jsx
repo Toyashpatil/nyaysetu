@@ -1,7 +1,6 @@
 import React from "react";
 import Header from "../components/Header";
 import RectangleImg from "../pages/assets/rectangleimg.jpg";
-import Button from "../components/Button";
 import UserCard from "../components/LawyerCard";
 import NearbyLawyerCard from "../components/NearbyLawyerCard";
 
@@ -45,14 +44,14 @@ const ConnectToLegalServices = () => {
             <NearbyLawyerCard
               imageUrl={RectangleImg}
               name="Toyash Patil"
-              employeeNumber="6969 0000 0000 0000"
+              employeeNumber="6969 6969 6969 6969"
               dob="20-04-2022"
               phoneNumber="382474782"
-              numberOfCases={222}
+              numberOfCases={143}
               address="123 Main St"
               email="toyash@example.com"
               courts="Supreme Court, District Court"
-              filedCases={100}
+              filedCases={90}
               pendingCases={50}
               objectionCases={10}
               disposedCases={60}

@@ -1,4 +1,4 @@
-import React,{useEffect} from "react";
+import React, { useEffect } from "react";
 import Header from "../components/Header";
 import Footer from "../components/Footer";
 import CnrNumberCard from "../components/CnrNumberCard";
@@ -6,23 +6,19 @@ import VideoLinks from "../components/VideoLinks";
 import Button from "../components/Button";
 import { useNavigate } from "react-router-dom";
 
-
 const LegalAdvice = () => {
+  const navigate = useNavigate();
 
-  const navigate=useNavigate()
-  
-  
   useEffect(() => {
-    if(!localStorage.getItem("token")){
-      navigate('/login')
+    if (!localStorage.getItem("token")) {
+      navigate("/login");
     }
-  }, [])
-  
+  }, []);
 
   const imgURLs = [
-    "https://youtu.be/nDgIVseTkuE?feature=shared",
-    "https://youtu.be/nDgIVseTkuE?feature=shared",
-    "https://youtu.be/nDgIVseTkuE?feature=shared"
+    "https://wallpapercave.com/wp/wp4332844.jpg",
+    "https://wallpapercave.com/dwp1x/wp4332850.jpg",
+    "https://wallpapercave.com/dwp1x/wp2750384.jpg",
   ];
 
   return (
@@ -38,16 +34,22 @@ const LegalAdvice = () => {
           <div className="py-2 font-medium">Important Links/PDFs:</div>
         </div>
         <div className="flex flex-col gap-y-2">
-          <ul  className="mx-6 list-disc">
+          <ul className="mx-6 list-disc">
             <li>
-              <a href="" className="underline text-lightseagreen font-medium">
+              <a
+                href="https://nalsa.gov.in/acts-rules/guidelines/standard-operating-procedure-sop-guidelines-for-utrcs"
+                className="underline text-lightseagreen font-medium"
+              >
                 STANDARD OPERATING PROCEDURE (SOP) for UNDER TRAIL REVIEW
                 COMMITTEES (UTRCs)
               </a>
             </li>
             <li>
-              <a href="" className="underline text-lightseagreen font-medium">
-                KJSCE Online
+              <a
+                href="https://nalsa.gov.in/services/legal-aid/legal-services"
+                className="underline text-lightseagreen font-medium"
+              >
+                Legal Aid Organizations in India
               </a>
             </li>
           </ul>
@@ -68,7 +70,12 @@ const LegalAdvice = () => {
         </div>
       </div>
       <div className="flex justify-center ">
-        <Button className="fixed bottom-8 w-[80%] h-9 bg-lightseagreen">
+        <Button
+          onClick={() => {
+            navigate("/connect");
+          }}
+          className="fixed bottom-8 w-[80%] h-9 bg-lightseagreen"
+        >
           Connect to Lawyer
         </Button>
       </div>
