@@ -4,7 +4,7 @@ import AuthContext from "../context/authContext";
 const Button = ({className, children}) => {
   return (
     <>
-      <button className={`text-base text-white font-medium bg-lightseagreen rounded-md ${className}`}>
+      <button className={`text-base text-white font-medium bg-lightseagreen rounded-md flex items-center justify-center ${className}`}>
         {children}
       </button>
     </>
