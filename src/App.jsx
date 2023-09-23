@@ -8,7 +8,7 @@ import LegalAdvice from './pages/LegalAdvice';
 import Admin from './pages/Admin';
 import MonitorCases from './pages/MonitorCases'
 import ConnectToLegalServices from './pages/ConnectToLegalServices';
-
+import Help from "./pages/Help";
 const App = () => {
   return (
     <div>
@@ -21,6 +21,7 @@ const App = () => {
             <Route path='/monitorcase' element={<MonitorCases/>} ></Route>
             <Route path='/connect' element={<ConnectToLegalServices/>} ></Route>
             <Route path='/admin' element={<Admin/>}></Route>
+            <Route path='/help' element={<Help/>}></Route>
           </Routes>
         </>
       </BrowserRouter>
