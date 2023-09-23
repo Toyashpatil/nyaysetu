@@ -4,7 +4,7 @@ import Footer from "./Footer";
 import Sidebar from "./Sidebar";
 import Logo from "../pages/assets/logo.png";
 
-const Admin = ({ children }) => {
+const Admin = ({ children, className }) => {
   const navigate = useNavigate();
 
   useEffect(() => {
@@ -102,12 +102,12 @@ const Admin = ({ children }) => {
     "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTjVg6BSqSz7cZAg2kzQ8fhutXi_0hJmyrWkDb40hVlHreyHqNyXdJ1bxLEkf_Drua3Wj0&usqp=CAU";
 
   return (
-    <div style={{ display: "flex" }} className="h-screen  ">
+    <div style={{ display: "flex" }} className="max-h-full   ">
       <div
         style={{ flex: 7 }}
-        className="bg-lightseagreen min-w-[100px] justify-between flex flex-col"
+        className="bg-lightseagreen min-w-[100px] justify-between flex flex-col "
       >
-        <div className="flex flex-col items-center ">
+        <div className="flex flex-col items-center">
           <div className="pt-24">
             <div className="bg-white rounded-full">
               <img src={imageUrl} className="p-1 h-16 w-16 rounded-full z-10" />
@@ -142,7 +142,10 @@ const Admin = ({ children }) => {
         <div className="h-1 w-[90%] mx-auto rounded-full bg-lightseagreen">
 
         </div>
+        <div className={className}>
         {children}
+
+        </div>
       </div>
       <Footer />
     </div>
