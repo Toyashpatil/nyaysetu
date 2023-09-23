@@ -2,7 +2,11 @@
 @tailwind components;
 @tailwind utilities;
 
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400;500&family=Poppins:wght@300;400;600&display=swap');
 .img{
     border: none;
     outline: none;
+}
+.option_fonts{
+    font-family: 'Montserrat', sans-serif;
 }

@@ -7,6 +7,7 @@ import UndertrialPrisoner from './pages/UndertrialPrisoner';
 import LegalAdvice from './pages/LegalAdvice';
 import Admin from './pages/Admin';
 import MonitorCases from './pages/MonitorCases'
+import ConnectToLegalServices from './pages/ConnectToLegalServices';
 
 const App = () => {
   return (
@@ -16,6 +17,9 @@ const App = () => {
           <Routes>
             <Route path='/' element={<UndertrialPrisoner />}></Route>
             <Route path='/login' element={<Home/>}></Route>
+            <Route path='/legaladvice' element={<LegalAdvice/>} ></Route>
+            <Route path='/monitorcase' element={<MonitorCases/>} ></Route>
+            <Route path='/connect' element={<ConnectToLegalServices/>} ></Route>
             <Route path='/admin' element={<Admin/>}></Route>
           </Routes>
         </>
