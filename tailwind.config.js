@@ -14,6 +14,7 @@ module.exports = {
         silver: "#b4bec9",
         whitesmoke: "#efefef",
         gray: "#010101",
+        dimgray: "#777171",
       },
     },
   },
