@@ -29,7 +29,7 @@ function Help() {
         </Button>
       </div>
       <div>
-      <Support title="Toyash" data="Toyasah is great" link="https://eventio.csikjsce.org"/>
+      <Support title="Vocational Training:" data="Many prisons in India provide vocational training programs to teach inmates skills such as carpentry, tailoring, and computer skills. " link="https://eventio.csikjsce.org"/>
       </div>
         <Footer/>
     </div>

@@ -20,9 +20,9 @@ const LegalAdvice = () => {
   
 
   const imgURLs = [
-    "https://i.redd.it/cbd801fa2l781.jpg",
-    "https://i.redd.it/i-keep-seeing-this-angry-cat-meme-does-anyone-know-what-v0-0o96ygkg9jw91.jpg?width=1080&format=pjpg&auto=webp&s=8a7220f58ae5e5ecbef518367d48b96f7327e06d",
-    "https://i.redd.it/i-keep-seeing-this-angry-cat-meme-does-anyone-know-what-v0-n9p8aheg9jw91.jpg?width=1080&format=pjpg&auto=webp&s=1234ce6118236f234e84f50164dd6f176c6d9f7e",
+    "https://youtu.be/nDgIVseTkuE?feature=shared",
+    "https://youtu.be/nDgIVseTkuE?feature=shared",
+    "https://youtu.be/nDgIVseTkuE?feature=shared"
   ];
 
   return (
@@ -56,13 +56,13 @@ const LegalAdvice = () => {
       <div className="video links mx-10">
         <div>
           <div className="flex flex-col gap-y-4 mb-24">
-            {/* <VideoLinks />
-            <VideoLinks />
-            <VideoLinks />
-            <VideoLinks /> */}
-            {imgURLs.map((imageUrl, index) => (
+            <VideoLinks title="UTP's Human Rights" imgLink="https://youtu.be/nDgIVseTkuE?feature=shared" />
+            <VideoLinks title="UTP's Human Rights" imgLink="https://youtu.be/nDgIVseTkuE?feature=shared" />
+            <VideoLinks title="UTP's Human Rights" imgLink="https://youtu.be/nDgIVseTkuE?feature=shared"/>
+            <VideoLinks title="UTP's Human Rights" imgLink="https://youtu.be/nDgIVseTkuE?feature=shared" />
+            {/* {imgURLs.map((imageUrl, index) => (
               <VideoLinks imgLink={imageUrl} index={index} />
-            ))}
+            ))} */}
             <div></div>
           </div>
         </div>

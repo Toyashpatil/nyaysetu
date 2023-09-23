@@ -6,7 +6,7 @@ const VideoLinks = ({imgLink, index}) => {
   
   return (
     <>
-      <span className=" font-medium text-black text-base">Video Title {index+1}:</span>
+      <span className=" font-medium text-black text-base"> {title}:</span>
       <div className="rounded-2xl shadow-lg overflow-hidden">
         <img
           className="w-full h-36 object-cover opacity-1 "
