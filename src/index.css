@@ -6,3 +6,12 @@
     border: none;
     outline: none;
 }
+td{
+    border: 2px solid lightseagreen;
+    text-align: center;
+    padding: 2%;
+}
+th{
+    background-color: #D9D9D9;
+    border: 2px solid lightseagreen;
+}
