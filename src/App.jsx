@@ -21,7 +21,6 @@ const App = () => {
             <Route path='/monitorcase' element={<MonitorCases/>} ></Route>
             <Route path='/connect' element={<ConnectToLegalServices/>} ></Route>
             <Route path='/admin' element={<Admin/>}></Route>
-            <Route path='/monitoring' element={<MonitorCases/>}></Route>
           </Routes>
         </>
       </BrowserRouter>
