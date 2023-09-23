@@ -1,6 +1,13 @@
 import React from 'react'
+import { useNavigate } from 'react-router-dom'
 
 const Header = ({name}) => {
+
+    const navigate = useNavigate();
+    const backButton = () => {
+        navigate(-1);
+    }
+    
   return (
     <div className="bg-lightseagreen h-24 rounded-b-2xl max-w-screen shadow-[0px_4px_4px_rgba(0,_0,_0,_0.15)] flex items-center justify-evenly px-4">
         <div className="flex flex-row justify-start gap-x-6 items-center w-full">
@@ -10,6 +17,7 @@ const Header = ({name}) => {
             viewBox="0 0 30 31"
             fill="none"
             xmlns="http://www.w3.org/2000/svg"
+            onClick={backButton}
             >
             <path
                 d="M12.5 24.25L3.75 15.5M3.75 15.5L12.5 6.75M3.75 15.5L26.25 15.5"
