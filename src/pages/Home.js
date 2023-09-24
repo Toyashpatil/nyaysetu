@@ -116,8 +116,8 @@ const Home = () => {
 
       <div
         className={`login bg-[#FFFAFA] h-[50vh] ${
-          isPc ? "mx-16 w-full gap-6" : "mx-auto"
-        } flex items-start flex-col md:flex-[6_2_0%]`}
+          isPc ? "mx-16 w-full gap-6 items-start" : "mx-auto items-center"
+        } flex  flex-col md:flex-[6_2_0%]`}
       >
         <p className="text-[1.5rem] not-italic font-semibold leading-[normal] md:text-6xl">
           Welcome
