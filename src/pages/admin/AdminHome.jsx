@@ -1,5 +1,6 @@
 import React from 'react'
 import Admin from '../../components/AdminLayout'
+import AdminCard from '../../components/AdminCard'
 
 const AdminHome = () => {
   return (
