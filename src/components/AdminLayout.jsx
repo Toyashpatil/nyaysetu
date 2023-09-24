@@ -4,6 +4,7 @@ import Footer from "./Footer";
 import Sidebar from "./Sidebar";
 import AuthContext from "../context/authContext";
 import Logo from "../pages/assets/logo.png";
+import Emb from '../pages/assets/emblem-dark 1.png'
 
 const Admin = ({ children, className }) => {
   const navigate = useNavigate();
@@ -113,11 +114,7 @@ const Admin = ({ children, className }) => {
         className="bg-lightseagreen min-w-[100px] justify-between flex flex-col min-h-screen"
       >
         <div className="flex flex-col items-center">
-          <div className="pt-24">
-            <div className="bg-white rounded-full">
-              <img src={imageUrl} className="p-1 h-16 w-16 rounded-full z-10" />
-            </div>
-          </div>
+          
 
           <Sidebar items={divs} />
         </div>
@@ -125,17 +122,17 @@ const Admin = ({ children, className }) => {
       <div style={{ flex: 93 }}>
         <div className="flex flex-row items-center justify-between mx-16">
           <div className="flex flex-row px-8 py-4 gap-8 items-center">
-            <div className="rounded-full overflow-hidden h-28 w-28">
+            <div className="rounded-full overflow-hidden h-16 w-16">
               <img src={imageUrl} />
             </div>
-            <div className="text-4xl font font-semibold">
+            <div className="text-2xl font font-semibold">
               <div className="inline-block w-96">Namaste</div>
               <div className="text-lightseagreen">Atharva Upare</div>
             </div>
           </div>
           <div className="h-max w-48">
-            <div className="h-max max-w-48">
-              <img
+            <div className="h-max max-w-30">
+              <img width="150px"
                 src={Logo}
                 alt="logo"
                 className="drop-shadow-xl"
