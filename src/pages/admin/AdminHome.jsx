@@ -82,7 +82,6 @@ const AdminHome = () => {
         
        
       </Admin>
-      
     </div>
     
   )

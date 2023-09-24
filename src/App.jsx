@@ -11,6 +11,7 @@ import Help from "./pages/Help";
 import Admin from './components/AdminLayout';
 import AdminHome from './pages/admin/AdminHome';
 import UnderTrialPrisonerInCourt  from "./pages/admin/UnderTrialPrisonerInCourt";
+import Notification from './pages/admin/Notification';
 const App = () => {
   return (
     <div>
@@ -26,6 +27,7 @@ const App = () => {
             <Route path='/admin' element={<AdminHome/>}></Route>
             <Route path='/help' element={<Help/>}></Route>
             <Route path='/admin/connect' element={<UnderTrialPrisonerInCourt/>}></Route>
+            <Route path='/admin/Noti' element={<Notification/>}></Route>
           </Routes>
         </>
       </BrowserRouter>
