@@ -4,7 +4,7 @@ import AuthContext from './authContext'
 const AuthState = (props) => {
 
   const [uniqueId, setUniqueId] = useState("");
-  const [temlaw, setTemlaw] = useState("MHT123456789")
+  const [temlaw, setTemlaw] = useState("1234 000 2343 3321")
   const [temppri, setTemppri] = useState("MHT123456788")
   const [lawyer, setLawyer] = useState({});
   const [prisoner, setPrisoner] = useState({});
