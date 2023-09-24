@@ -1,16 +1,21 @@
-import React, { useEffect, useState } from "react";
+import React, { useContext, useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
 import Footer from "./Footer";
 import Sidebar from "./Sidebar";
+import AuthContext from "../context/authContext";
 
 const Admin = ({children}) => {
   const navigate = useNavigate();
 
+  const {getLawyer,lawyer}=useContext(AuthContext);
+
   useEffect(() => {
     if (!localStorage.getItem("token")) {
-      navigate("/login/");
+      navigate("/login");
     }
   }, []);
+
+  console.log(lawyer.name)
 
   const [isActive, setisActive] = useState(false);
   const toggleActive = (index) => {

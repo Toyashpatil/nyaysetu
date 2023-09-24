@@ -1,8 +1,11 @@
-import React from "react";
+import React, { useContext } from "react";
 import PropTypes from "prop-types";
 import Button from "./Button"; // Assuming you have a Button component
+import AuthContext from "../context/authContext";
 
 const UserCard = ({ imageUrl, name, employeeNumber }) => {
+
+  const {lawyer,prisoner}=useContext(AuthContext);
 
   const onClickHandler = () => {
     console.log("UserCard clicked");

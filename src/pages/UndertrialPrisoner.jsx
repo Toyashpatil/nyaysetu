@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React, { useContext, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
 import Header from "../components/Header";
 import Footer from "../components/Footer";
@@ -9,6 +9,7 @@ import option2 from "../pages/assets/human-rights 1.png"
 import option3 from "../pages/assets/lawyer 1.png"
 import option4 from "../pages/assets/auction new.png"
 import { NavLink } from "react-router-dom";
+import AuthContext from "../context/authContext";
 
 
 
@@ -16,17 +17,21 @@ const UndertrialPrisoner = () => {
 
   const navigate = useNavigate()
 
+  const {getPrisoner,prisoner}=useContext(AuthContext);
 
-  useEffect(() => {
+  useEffect( () => {
     if (!localStorage.getItem("token")) {
       navigate('/login')
     }
+
   }, [])
 
+console.log(prisoner)
   return (
     <div className="min-h-screen">
-      <Header name="Toyash Patil" /> {/*user's name here*/}
-      <CnrNumberCard />
+      <Header name={prisoner.name} /> {/*user's name here*/}
+
+      <CnrNumberCard cnr={prisoner.veriNum} caseStats={prisoner.caseStatus} />
       <div className=" flex-col space-y-10 ml-2 justify-center ">
         <div className=" w-[374px] h-[172px]">
           <div className=" flex gap-2 w-[374px] h-[172px]">

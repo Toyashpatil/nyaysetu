@@ -1,7 +1,10 @@
-import React, { useState } from 'react'
+import React, { useContext, useState } from 'react'
 import { useNavigate } from 'react-router-dom'
 import bg from "./assets/Login2.png"
+import AuthContext from '../context/authContext'
 const Home = () => {
+
+  const {uniqueId,setUniqueId,getLawyer,getPrisoner,temlaw,temppri}=useContext(AuthContext);
 
   const [auth, setAuth] = useState({
     name: "",
@@ -23,7 +26,6 @@ const Home = () => {
             )
           })
       }else{
-        console.log(name)
         setAuth((prev)=>{
           return(
             {
@@ -33,6 +35,12 @@ const Home = () => {
           )
         })
       }
+  }
+
+  const handleId=(e)=>{
+    e.preventDefault()
+    console.log("i clicked")
+    setUniqueId(auth.veriNum);
   }
 
   const handleClick = async (e)=>{
@@ -49,8 +57,12 @@ const Home = () => {
     if(Data.success){
       localStorage.setItem("token",Data.token)
       if(Data.user==="prisoner"){
+        getPrisoner(uniqueId);
+        getLawyer(temlaw)
         navigate('/')
       }else{
+        getLawyer(uniqueId);
+        getPrisoner(temppri)
         navigate("/admin")
       }
       
@@ -58,8 +70,6 @@ const Home = () => {
       alert("No such Reacord Found")
     }
   }
-  
-
 
   return (
     <div className='main h-[100vh] bg-[#FFFAFA]'>
@@ -89,6 +99,7 @@ const Home = () => {
           <div className='input3 w-full flex flex-col items-start gap-1.5'>
           <p className='text-[1rem] not-italic font-medium leading-[normal]'>Enter CNR/Enrollment Number:</p>
           <input className="number flex w-[100%] items-center px-[0.3125rem] py-2 border shadow-[0px_4px_4px_0px_rgba(0,0,0,0.10)] rounded-[0.325rem] border-solid border-[#41C0AB] bg-[#efefef]" placeholder='CNR/Enrollment Number' onChange={handleChange} name='veriNum' ></input>
+          <button onClick={handleId}>Confirm</button>
           </div>
           <button type="submit" className='flex w-[100%] justify-center items-center px-[0.3125rem] py-2  border shadow-[0px_4px_4px_0px_rgba(0,0,0,0.10)] rounded-[0.3125rem] border-solid border-[#41C0AB] bg-[#41C0AB] ' onClick={handleClick}>Continue</button>
 

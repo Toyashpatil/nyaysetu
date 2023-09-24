@@ -13,7 +13,8 @@ import AdminHome from './pages/admin/AdminHome';
 const App = () => {
   return (
     <div>
-      <BrowserRouter>
+    <AuthState>
+    <BrowserRouter>
         <>
           <Routes>
             <Route path='/' element={<UndertrialPrisoner />}></Route>
@@ -26,6 +27,7 @@ const App = () => {
           </Routes>
         </>
       </BrowserRouter>
+    </AuthState>
     </div>
   )
 }

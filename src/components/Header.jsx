@@ -1,7 +1,10 @@
-import React from 'react'
+import React, { useContext } from 'react'
 import { useNavigate } from 'react-router-dom'
+import AuthContext from '../context/authContext';
 
 const Header = ({name}) => {
+
+    const {prisoner}=useContext(AuthContext);
 
     const navigate = useNavigate();
     const backButton = () => {
@@ -29,7 +32,7 @@ const Header = ({name}) => {
             </svg>
             <div className="text-white">
                 <div className="text-3xl font-semibold">Namaste,</div>
-                <div className="text-gray text-xl font-medium">{name}</div>
+                <div className="text-gray text-xl font-medium">{prisoner.name}</div>
             </div>
             
         </div>
