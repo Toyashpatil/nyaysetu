@@ -15,7 +15,7 @@ const Modal = ({ closeModal, children }) => {
             &#215;
           </button>
         </div>
-        <div className="modal-content px-4 py-4">{children}</div>
+        <div className="modal-content px-3 py-3">{children}</div>
       </div>
     </div>
   );

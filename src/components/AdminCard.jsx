@@ -15,7 +15,7 @@ const AdminCard = ({name,cnr}) => {
                     </h1>
                 </div>
                 <div className='flex justify-center items-center '>
-                    <div>
+                    <div className='mb-6'>
                     <button className=' shadow-lg h-[25px] w-[133px] rounded-md bg-[#41C0AB]'>
                         More info
                     </button>

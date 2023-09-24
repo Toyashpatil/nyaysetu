@@ -19,7 +19,7 @@ function LCard({
   return (
     <div className="   ">
     
-    <div className="modal-container bg-white w-96 mx-4 z-50 overflow-y-auto h-max border border-lightseagreen inset rounded-xl shadow-[0px_4px_4px_rgba(0,_0,_0,_0.15)] overflow-hidden">
+    <div className="modal-container bg-white w-96 mx-4 z-50 overflow-y-auto h-auto border border-lightseagreen inset rounded-xl shadow-[0px_4px_4px_rgba(0,_0,_0,_0.15)] overflow-hidden">
       <div className="modal-header px-4 py-2 text-white bg-lightseagreen flex flex-row items-center justify-between">
         <h2 className="text-xl font-semibold text-white">Lawyer Details</h2>
        

@@ -116,7 +116,7 @@ const Admin = ({ children, className }) => {
         <div className="flex flex-col items-center">
           
 
-          <Sidebar items={divs} />
+          <Sidebar />
         </div>
       </div>
       <div style={{ flex: 93 }}>
@@ -141,7 +141,7 @@ const Admin = ({ children, className }) => {
           </div>
        
         </div>
-        <div className="h-1 w-[90%] mx-auto rounded-full bg-lightseagreen">
+        <div className="h-[0.08rem] w-[90%] mx-auto rounded-full bg-lightseagreen">
 
         </div>
         <div className={className}>

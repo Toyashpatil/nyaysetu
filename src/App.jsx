@@ -10,6 +10,7 @@ import ConnectToLegalServices from './pages/ConnectToLegalServices';
 import Help from "./pages/Help";
 import Admin from './components/AdminLayout';
 import AdminHome from './pages/admin/AdminHome';
+import UnderTrialPrisonerInCourt  from "./pages/admin/UnderTrialPrisonerInCourt";
 const App = () => {
   return (
     <div>
@@ -24,6 +25,7 @@ const App = () => {
             <Route path='/connect' element={<ConnectToLegalServices/>} ></Route>
             <Route path='/admin' element={<AdminHome/>}></Route>
             <Route path='/help' element={<Help/>}></Route>
+            <Route path='/admin/connect' element={<UnderTrialPrisonerInCourt/>}></Route>
           </Routes>
         </>
       </BrowserRouter>

@@ -65,6 +65,7 @@ import Connect from "../pages/assets/mdi_help-outline.png";
 import Noti from "../pages/assets/tdesign_notification.png";
 import Logout from "../pages/assets/logout.png";
 import Profile from "../pages/assets/carbon_user.png";
+import { NavLink } from "react-router-dom";
 function Sidebar() {
   const imageUrl =
     "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTjVg6BSqSz7cZAg2kzQ8fhutXi_0hJmyrWkDb40hVlHreyHqNyXdJ1bxLEkf_Drua3Wj0&usqp=CAU";
@@ -77,18 +78,18 @@ function Sidebar() {
             </div>
       </div>
       <div className='flex content-center justify-center items-center flex-col gap-12'>
-        <div className='w-20 flex justify-center items-center rounded-md p-2 hover:bg-[#20908a]'>
+        <NavLink to="/admin"><div className='w-20 flex justify-center items-center rounded-md p-2 hover:bg-[#20908a]'>
           <img className='w-10' src={Home} alt="" />
-        </div>
+        </div></NavLink>
         <div className='w-20 flex justify-center items-center rounded-md p-2 hover:bg-[#20908a]'>
           <img className='w-10' src={Profile} alt="" />
         </div>
-        <div className='w-20 flex justify-center items-center rounded-md p-2 hover:bg-[#20908a]'>
+        <NavLink to="/admin/connect"><div className='w-20 flex justify-center items-center rounded-md p-2 hover:bg-[#20908a]'>
           <img className='w-10' src={Connect} alt="" />
-        </div>
-        <div className='w-20 flex justify-center items-center rounded-md p-2 hover:bg-[#20908a]'>
+        </div></NavLink>
+        <NavLink to="/admin/noti"><div className='w-20 flex justify-center items-center rounded-md p-2 hover:bg-[#20908a]'>
           <img className='w-10' src={Noti} alt="" />
-        </div>
+        </div></NavLink>
       </div>
       <div  className='w-20 flex justify-center items-center rounded-md p-2 hover:bg-[#20908a]'>
         <img className='w-10' src={Logout} alt="" />
