@@ -1,4 +1,4 @@
-import React, { useContext, useState } from 'react'
+import React, { useContext, useEffect, useState } from 'react'
 import { useNavigate } from 'react-router-dom'
 import bg from "./assets/Login2.png"
 import AuthContext from '../context/authContext'
@@ -71,16 +71,34 @@ const Home = () => {
     }
   }
 
+  const [windowWidth, setWindowWidth] = useState(window.innerWidth);
+  const isPc = windowWidth >= 768; // You can adjust this value based on your PC threshold
+
+  useEffect(() => {
+    // Update windowWidth state when the window is resized
+    const handleResize = () => {
+      setWindowWidth(window.innerWidth);
+    };
+
+    window.addEventListener('resize', handleResize);
+
+    return () => {
+      // Remove the event listener when the component unmounts
+      window.removeEventListener('resize', handleResize);
+    };
+  }, []);
+
+
   return (
-    <div className='main h-[100vh] bg-[#FFFAFA]'>
-      <div className='lady h-[45vh] overflow-hidden z-[2] '>
-        <img src={bg} className='img h-[100%] w-[100%] '></img>
+    <div className='main h-screen flex flex-col bg-[#FFFAFA] md:flex-row-reverse mx-auto items-center justify-center'>
+      <div className={`lady ${isPc ? 'h-screen' : 'h-[50vh]'} w-full overflow-hidden z-[2] md:flex-2`}>
+        <img src={bg} className='img h-[100%] w-[100%] md:h-[120%] '></img>
       </div>
-      <div className='login bg-[#FFFAFA] h-[50vh] flex items-center flex-col'>
-        <p className='text-[1.5rem] not-italic font-semibold leading-[normal]'>Welcome</p>
-        <form className='inputs  h-auto w-[80%] mt-4 inline-flex flex-col  items-start gap-6'>
+      <div className={`login bg-[#FFFAFA] h-[50vh] ${isPc? 'mx-16 w-full gap-6' : 'mx-auto'} flex items-center flex-col md:flex-1`}>
+        <p className='text-[1.5rem] not-italic font-semibold leading-[normal] md:text-5xl'>Welcome</p>
+        <form className='inputs  h-auto w-[80%] mt-4 inline-flex flex-col  items-start gap-4'>
           <div className='input1 w-full flex flex-col items-start gap-1.5'>
-            <p className='text-[1rem] not-italic font-medium leading-[normal]' >Username:</p>
+            <p className='text-base not-italic font-medium leading-[normal]' >Username:</p>
             <input placeholder='username' className='username lex w-[100%] items-center border shadow-[0px_4px_4px_0px_rgba(0,0,0,0.10)] px-[0.3125rem] py-2 rounded-[0.3.25rem] border-solid border-[#41C0AB] bg-[#efefef]'onChange={handleChange} name="name"></input>
           </div>
           <div className=' input2 w-full flex flex-col justify-center items-start gap-[0.3rem]'>

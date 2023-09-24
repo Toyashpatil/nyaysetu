@@ -3,6 +3,8 @@ import Admin from '../../components/AdminLayout'
 import  RectangleImg  from "../assets/rectangleimg.jpg";
 import NearbyLawyerCard from '../../components/NearbyLawyerCard'
 import LCard from '../../components/LCard'
+import AdminCard from '../../components/AdminCard'
+
 const AdminHome = () => {
  
   return (
