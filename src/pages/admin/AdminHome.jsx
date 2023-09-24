@@ -8,9 +8,7 @@ const AdminHome = () => {
         {/* Admin wrapper contains sidebar by default */}
         {/* Only add in children */}
       <Admin> 
-        Hello
       </Admin>
-      
     </div>
     
   )
