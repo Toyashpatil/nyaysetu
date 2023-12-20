@@ -1,70 +1,42 @@
-# Getting Started with Create React App
+# NyaySetu
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Problem Overview
 
-## Available Scripts
+	
+To develop technology-driven solutions that address the challenges faced by undertrial prisoners in India, including legal aid, access to justice, and rehabilitation.
 
-In the project directory, you can run:
+## Proposed Solution
 
-### `npm start`
+We pressent you NyaySetu!!
+Nyaysetu is a platform that connects undertrial prisoners with pro bono lawyers, legal clinics, and legal aid organizations including UTRCs for bail process and providing legal aid to them, including legal representation, access to court proceedings, and legal resources.
+NyaySetu act as a mordern yet simple interface that connects undertrial prisoners and legal organizations in one streamlined flow with a very intutive user interface.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Features of Proposed Solution
 
-### `npm test`
+- User-Friendly and Polished UI
+- Prisoner's authentication by logging in through unquie prisoner's CNR Number
+- Connects undertrial prisoners with pro bono lawyers, legal clinics
+- Dashboard that tracks and monitors the status and progress of undertrial prisoners
+- Provide education, vocational training, and mental health support to undertrial prisoners
+- Reducing recidivism rates and promoting social reintegration
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Screenshots
 
-### `npm run build`
+![final-landing](./src/pages/assets/landingPg.png)
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+![image 1](./src/pages/assets/user1.png)
+![image 2](./src/pages/assets/user3.png)
+![image 3](./src/pages/assets/user7.png)
+![image 4](./src/pages/assets/admin.png)
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-### `npm run eject`
+## Team Members
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+- Toyash Patil
+- Jiya Trivedi
+- Atharva Upare
+- Ojas Chatur
+- Rashi Joisher
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)

@@ -2,3 +2,23 @@
 @tailwind components;
 @tailwind utilities;
 
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400;500&family=Poppins:wght@300;400;600&display=swap');
+.img{
+    border: none;
+    outline: none;
+}
+.option_fonts{
+    font-family: 'Montserrat', sans-serif;
+}
+td{
+    border: 2px solid lightseagreen;
+    text-align: center;
+    padding: 2%;
+}
+th{
+    background-color: #D9D9D9;
+    border: 2px solid lightseagreen;
+}
+.admin_font{
+    color: #41C0AB;
+}
