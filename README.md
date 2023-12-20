@@ -23,7 +23,7 @@ NyaySetu act as a mordern yet simple interface that connects undertrial prisoner
 
 ## Screenshots
 
-![final-landing](./src/pages/assets/Login2.png)
+![final-landing](./src/pages/assets/landingPg.png)
 
 ![image 1](./src/pages/assets/user1.png)
 ![image 2](./src/pages/assets/user3.png)
